@@ -9,7 +9,10 @@
 **GitHub Username**: Pajn  
 
 [Proposal Location](https://github.com/Pajn/dep-const-function-literals)
-[dartbug](https://code.google.com/p/dart/issues/detail?id=4596)
+
+Other stakeholders:
+
+- [dartbug](https://code.google.com/p/dart/issues/detail?id=4596)
 
 ## Summary
 
@@ -110,7 +113,7 @@ The first is that function literals where an compile-time constant is required i
   
 The second is that function literals is automatically constant if it only access the scope available to a constant function literal. This is a potentially breaking change.
 
-Both cases of constness inferation may make it hard to see if a function literal is const or not and also breaks previous ***
+Both cases of constness inferation may make it hard to see if a function literal is const or not and do not follow the syntax from constant list and map literals.
 
 ## Deliverables
 
