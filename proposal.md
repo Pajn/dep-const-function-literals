@@ -119,6 +119,19 @@ Both cases of constness inferation may make it hard to see if a function literal
 
 ### Language specification changes
 
+Change function expression syntax (16.10) from 
+```
+functionExpression:
+    formalParameterList functionBody
+```
+to 
+```
+functionExpression:
+    const? formalParameterList functionBody
+```
+
+Add `A constant function expression (16.10).` to list under __16.1 Constants__
+
 **TODO**
 
 ### A working implementation
